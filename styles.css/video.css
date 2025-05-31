@@ -1,0 +1,93 @@
+/* Thumbnail image styling */
+.thumbnail {
+  width: 100%;
+  border-radius: 14px;
+  transition: border-radius 0.25s;
+}
+
+.thumbnail:hover {
+  border-radius: 0;
+}
+
+/* Video grid styling */
+
+.video-title {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+/* Profile picture styling */
+
+.profile-picture {
+  width: 36px;
+  border-radius: 50px;
+}
+
+/* Container for each thumbnail row */
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+/* Video author */
+
+.video-author,
+.video-stats {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+.video-author {
+  margin-bottom: 4px;
+}
+
+/* Making the screen responsive */
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/*  Video time styling */
+
+.video-time {
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+}

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>YouTube.com Clone</title>
+
+    <!-- Font style -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Linking css to html  -->
+
+    <link rel="stylesheet" href="styles.css/general.css" />
+    <link rel="stylesheet" href="styles.css/video.css" />
+    <link rel="stylesheet" href="styles.css/header.css" />
+    <link rel="stylesheet" href="styles.css/sidebar.css" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <!-- Left Section -->
+
+    <div class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" /><img
+          class="youtube-logo"
+          src="icons/youtube-logo.svg"
+        />
+      </div>
+
+      <!-- Middle Section -->
+
+      <div class="middle-section">
+        <!-- Search Bar -->
+        <input class="search-bar" type="text" placeholder="Search" />
+
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" />
+          <div class="tooltip">Search</div>
+        </button>
+
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+
+      <!-- Right Section -->
+
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg" />
+          <div class="tooltip">Create</div>
+        </div>
+
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg" />
+          <div class="tooltip">Youtube apps</div>
+        </div>
+
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg" />
+          <div class="notifications-count">9+</div>
+          <div class="tooltip">Notification</div>
+        </div>
+
+        <img class="current-user-picture" src="profile-pic/google-photo.jpg" />
+      </div>
+    </div>
+
+    <!-- SideBar -->
+
+    <div class="side-bar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg" />
+        <div>Home</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" />
+        <div>Explore</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" />
+        <div>Subscriptions</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="icons/originals.svg" />
+        <div>Originals</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" />
+        <div>YouTube Music</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="icons/library.svg" />
+        <div>Library</div>
+      </div>
+    </div>
+
+    <!-- Creating a video grid -->
+
+    <div class="video-grid">
+      <!-- First Video -->
+      <div class="video-preview">
+        <!-- Thumbnail -->
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/among-us.avif" />
+
+          <div class="video-time">27:55</div>
+        </div>
+
+        <div class="video-info-grid">
+          <!-- Profile Picture -->
+          <div class="channel-picture">
+            <img class="profile-picture" src="profile-pic/valkyrae.jpg" />
+          </div>
+
+          <!-- Video Description -->
+          <div class="video-info">
+            <p class="video-title">
+              AMONG US But I Can't Stop Getting IMPOSTOR 😈
+            </p>
+            <p class="video-author">Valkyrae</p>
+            <p class="video-stats">143K views &#183; 8 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Video -->
+      <div class="video-preview">
+        <!-- Thumbnail -->
+
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/life-church.avif" />
+
+          <div class="video-time">34:39</div>
+        </div>
+
+        <div class="video-info-grid">
+          <!-- Profile Picture -->
+          <div class="channel-picture">
+            <img class="profile-picture" src="profile-pic/life-church.jpg" />
+          </div>
+
+          <!-- Video Description -->
+          <div class="video-info">
+            <p class="video-title">Hear God in Your Everyday Life</p>
+            <p class="video-author">Life.Church</p>
+            <p class="video-stats">123K views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Video -->
+      <div class="video-preview">
+        <!-- Thumbnail -->
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/5up.avif" />
+
+          <div class="video-time">23:06</div>
+        </div>
+
+        <div class="video-info-grid">
+          <!-- Profile Picture -->
+          <div class="channel-picture">
+            <img class="profile-picture" src="profile-pic/5up.jpg" />
+          </div>
+
+          <!-- Video Description -->
+          <div class="video-info">
+            <p class="video-title">
+              The Funniest Game of Among Us LOVERS Ever... (modded airship)
+            </p>
+            <p class="video-author">5up</p>
+            <p class="video-stats">669K views &#183; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fourth Video -->
+      <div class="video-preview">
+        <!-- Thumbnail -->
+
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/Friends.avif" />
+
+          <div class="video-time">36:56</div>
+        </div>
+
+        <div class="video-info-grid">
+          <!-- Profile Picture -->
+          <div class="channel-picture">
+            <img class="profile-picture" src="profile-pic/Friends.jpg" />
+          </div>
+
+          <!-- Video Description -->
+          <div class="video-info">
+            <p class="video-title">
+              The Ones with the Whole Gang from Season 3 | Friends
+            </p>
+            <p class="video-author">Friends</p>
+            <p class="video-stats">538K views &#183; 3 weeks ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fifth Video -->
+      <div class="video-preview">
+        <!-- Thumbnail -->
+
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/echoes.avif" />
+
+          <div class="video-time">3:28</div>
+        </div>
+
+        <div class="video-info-grid">
+          <!-- Profile Picture -->
+          <div class="channel-picture">
+            <img class="profile-picture" src="profile-pic/100-thieves.jpg" />
+          </div>
+
+          <!-- Video Description -->
+          <div class="video-info">
+            <p class="video-title">Valkyrae, Fuslie & Ylona Garcia - Echoes</p>
+            <p class="video-author">100 Thieves</p>
+            <p class="video-stats">597K views &#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sixth Video -->
+      <div class="video-preview">
+        <!-- Thumbnail -->
+
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/jaiden.avif" />
+
+          <div class="video-time">24:36</div>
+        </div>
+
+        <div class="video-info-grid">
+          <!-- Profile Picture -->
+          <div class="channel-picture">
+            <img class="profile-picture" src="profile-pic/jaiden.jpg" />
+          </div>
+
+          <!-- Video Description -->
+          <div class="video-info">
+            <p class="video-title">
+              I Won Mr. Beast's $1,000,000 Youtuber Challenge
+            </p>
+            <p class="video-author">JaidenAnimations</p>
+            <p class="video-stats">22M views &#183; 9 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seventh Video -->
+      <div class="video-preview">
+        <!-- Thumbnail -->
+
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/netflix.avif" />
+
+          <div class="video-time">36:56</div>
+        </div>
+
+        <div class="video-info-grid">
+          <!-- Profile Picture -->
+          <div class="channel-picture">
+            <img class="profile-picture" src="profile-pic/netflix.jpg" />
+          </div>
+
+          <!-- Video Description -->
+          <div class="video-info">
+            <p class="video-title">
+              Awesome God / God Only Knows | A Week Away
+            </p>
+            <p class="video-author">Netflix</p>
+            <p class="video-stats">16M views &#183; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Eighth Video -->
+      <div class="video-preview">
+        <!-- Thumbnail -->
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/Pico-park.avif" />
+
+          <div class="video-time">57:47</div>
+        </div>
+
+        <div class="video-info-grid">
+          <!-- Profile Picture -->
+          <div class="channel-picture">
+            <img class="profile-picture" src="profile-pic/toast.jpg" />
+          </div>
+
+          <!-- Video Description -->
+          <div class="video-info">
+            <p class="video-title">Try not to mald</p>
+            <p class="video-author">Disguised Toast</p>
+            <p class="video-stats">586 views &#183; 7 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ninth Video -->
+      <div class="video-preview">
+        <!-- Thumbnail -->
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/chai-met-toast.avif" />
+
+          <div class="video-time">3:56</div>
+        </div>
+
+        <div class="video-info-grid">
+          <!-- Profile Picture -->
+          <div class="channel-picture">
+            <img class="profile-picture" src="profile-pic/chai-met-toast.jpg" />
+          </div>
+
+          <!-- Video Description -->
+          <div class="video-info">
+            <p class="video-title">
+              When Chai Met Toast - so beautiful, with you
+            </p>
+            <p class="video-author">When Chai Met Toast</p>
+            <p class="video-stats">1M views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tenth Video -->
+      <div class="video-preview">
+        <!-- Thumbnail -->
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/hunger-games.avif" />
+
+          <div class="video-time">3:23</div>
+        </div>
+
+        <div class="video-info-grid">
+          <!-- Profile Picture -->
+          <div class="channel-picture">
+            <img class="profile-picture" src="profile-pic/hunger-games.jpg" />
+          </div>
+
+          <!-- Video Description -->
+          <div class="video-info">
+            <p class="video-title">Katniss Everdeen | Survivor</p>
+            <p class="video-author">estev</p>
+            <p class="video-stats">107K views &#183; 6 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Eleventh Video -->
+      <div class="video-preview">
+        <!-- Thumbnail -->
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/toast.avif" />
+
+          <div class="video-time">17:32</div>
+        </div>
+
+        <div class="video-info-grid">
+          <!-- Profile Picture -->
+          <div class="channel-picture">
+            <img class="profile-picture" src="profile-pic/toast.jpg" />
+          </div>
+
+          <!-- Video Description -->
+          <div class="video-info">
+            <p class="video-title">
+              Ruling the lobby as the MAYOR of Among Us...
+            </p>
+            <p class="video-author">Disguised Toast</p>
+            <p class="video-stats">1.3M views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Twelfth Video -->
+      <div class="video-preview">
+        <!-- Thumbnail -->
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/laapataa-ladies.avif" />
+
+          <div class="video-time">2:26</div>
+        </div>
+
+        <div class="video-info-grid">
+          <!-- Profile Picture -->
+          <div class="channel-picture">
+            <img class="profile-picture" src="profile-pic/T-series.jpg" />
+          </div>
+
+          <!-- Video Description -->
+          <div class="video-info">
+            <p class="video-title">
+              Sajni (Song): Arijit Singh, Ram Sampath | Laapataa Ladies
+            </p>
+            <p class="video-author">T-Series</p>
+            <p class="video-stats">167M views &#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
